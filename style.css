@@ -1,0 +1,192 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #F2F2F7;
+    color: #000;
+}
+
+/* Header styles */
+.header {
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-bottom: 1px solid #C6C6C8;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1C1C1E;
+}
+
+.subtitle {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #8E8E93;
+}
+
+/* Container styles */
+.container {
+    padding: 16px;
+}
+
+/* Machine interface styles */
+.machine-interface {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.unit-toggle {
+    background-color: #007AFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.unit-toggle:active {
+    background-color: #005BB5;
+}
+
+/* Input section styles */
+.input-section {
+    margin-bottom: 16px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-label {
+    font-size: 16px;
+    color: #3C3C43;
+    margin-right: 8px;
+}
+
+input[type="number"] {
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #C6C6C8;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+    color: #1C1C1E;
+}
+
+.unit-label {
+    font-size: 16px;
+    color: #3C3C43;
+    margin-left: 8px;
+}
+
+/* Measurement group styles */
+.measurement-group {
+    margin-bottom: 16px;
+}
+
+.group-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1C1C1E;
+    margin-bottom: 8px;
+}
+
+.measurement-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #E5E5EA;
+}
+
+.measurement-label {
+    font-size: 16px;
+    color: #3C3C43;
+}
+
+.measurement-value {
+    font-size: 16px;
+    color: #1C1C1E;
+    text-align: right;
+}
+
+/* Calculate button styles */
+.button {
+    background-color: #34C759;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #28A745;
+}
+
+/* Ruler note styles */
+.ruler-note {
+    background-color: #FFFBCC;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #3C3C43;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 16px;
+    color: #8E8E93;
+    font-size: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 8px;
+    }
+
+    .machine-interface {
+        padding: 16px 8px;
+    }
+
+    .unit-toggle,
+    .button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .input-label,
+    .unit-label,
+    .measurement-label,
+    .measurement-value {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+}
