@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trifold Calculator XP - Professional Folding Machine Calculator</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <h1 class="title">Trifold Calculator XP</h1>
+        <div class="subtitle">Your Professional Folding Machine Calculator</div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <div class="machine-interface">
+            <!-- Controls section -->
+            <div class="controls">
+                <!-- Button to toggle between Metric and Imperial units -->
+                <button class="unit-toggle" id="unitToggle" onclick="toggleUnitSystem()">Switch to Metric</button>
+            </div>
+
+            <!-- Input section for sheet length -->
+            <div class="input-section">
+                <div class="input-container">
+                    <span class="input-label">Sheet Length:</span>
+                    <input type="number" id="sheetLength" step="0.001" placeholder="Enter sheet length" value="11">
+                    <span id="unitLabel" class="unit-label">inch</span>
+                </div>
+            </div>
+
+            <!-- Measurement groups for Scores -->
+            <div class="measurement-group">
+                <div class="group-title">Scores</div>
+                <div class="measurement-row">
+                    <span class="measurement-label">Score 1:</span>
+                    <span class="measurement-value" id="score1">-</span>
+                </div>
+                <div class="measurement-row">
+                    <span class="measurement-label">Score 2:</span>
+                    <span class="measurement-value" id="score2">-</span>
+                </div>
+            </div>
+
+            <!-- Measurement groups for Folds -->
+            <div class="measurement-group">
+                <div class="group-title">Folds</div>
+                <div class="measurement-row">
+                    <span class="measurement-label">Fold 1:</span>
+                    <span class="measurement-value" id="fold1">-</span>
+                </div>
+                <div class="measurement-row">
+                    <span class="measurement-label">Fold 2:</span>
+                    <span class="measurement-value" id="fold2">-</span>
+                </div>
+            </div>
+
+            <!-- Measurement groups for Panels -->
+            <div class="measurement-group">
+                <div class="group-title">Panels</div>
+                <div class="measurement-row">
+                    <span class="measurement-label">Panel 1:</span>
+                    <span class="measurement-value" id="panel1">-</span>
+                </div>
+                <div class="measurement-row">
+                    <span class="measurement-label">Panel 2:</span>
+                    <span class="measurement-value" id="panel2">-</span>
+                </div>
+                <div class="measurement-row">
+                    <span class="measurement-label">Panel 3:</span>
+                    <span class="measurement-value" id="panel3">-</span>
+                </div>
+            </div>
+
+            <!-- Calculate button -->
+            <button class="button" onclick="calculateMeasurements()">Calculate</button>
+
+            <!-- Note for ruler alignment in Imperial units -->
+            <div class="ruler-note" id="rulerNote">
+                * Imperial measurements include 16ths for precise ruler alignment.
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        © 2024 Trifold Calculator XP - Professional Folding Machine Interface
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
